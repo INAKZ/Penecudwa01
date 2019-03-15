@@ -96,12 +96,34 @@ void Inactivate_Chara(charap chara) {
 }
 
 void Chara_MainLoop(charap chara) {
+	switch (GetCharacterType(chara)) {
+	case CharaTypePlayerRound:
+		Player_MainLoop(chara);
+		return;
+	case CharaTypePlayerSquare:
+		Player_MainLoop(chara);
+		return;
+	default:
 	chara->x = GetCharacterX(chara) + GetCharacterSpeed(chara) * cos(GetCharacterAngle(chara));
 	chara->y = GetCharacterY(chara) + GetCharacterSpeed(chara) * sin(GetCharacterAngle(chara));
+	}
 }
 void Chara_DrawLoop(charap chara) {
 	DrawRotaGraph(GetCharacterX(chara), GetCharacterY(chara), 1.0,
 		GetCharacterAngle(chara), GetCharacterImg(chara), TRUE, false);
+}
+
+void Player_MainLoop(charap chara) {
+	//左右に移動して　ジャンプする
+	int x = GetCharacterX(chara);
+	int y = GetCharacterY(chara);
+	if (GetKeyboardInput(KEY_INPUT_LEFT) >= 1) {
+		x -= GetCharacterSpeed(chara);
+	}else if (GetKeyboardInput(KEY_INPUT_RIGHT) >= 1) {
+		x += GetCharacterSpeed(chara);
+	}
+	DrawFormatString(250, 240, GetColor(255, 255, 255), "x:%d y:%d speed:%f", x, y, GetCharacterSpeed(chara));
+	SetCharacterX(chara, x);
 }
 
 void Chara_MoveSet(charap chara) {
@@ -139,6 +161,7 @@ void SetCharacterImg(charap chara, int img) {
 	if (CharacterExist(chara) == true) { chara->img = img; }
 }
 
+int GetCharacterType(charap chara) { return chara->type; }
 int GetCharacterX(charap chara) { return chara->x; }
 int GetCharacterY(charap chara) { return chara->y; }
 int GetCharacterCD(charap chara) { return chara->cdx; }

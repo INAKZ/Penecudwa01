@@ -165,7 +165,9 @@
     <ClInclude Include="GameArea.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Input.h" />
+    <ClInclude Include="StageMgr.h" />
     <ClInclude Include="Startup.h" />
+    <ClInclude Include="TestStage.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

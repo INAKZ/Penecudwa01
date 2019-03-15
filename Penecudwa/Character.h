@@ -23,6 +23,8 @@ void Inactivate_Chara(charap chara);
 void Chara_MainLoop(charap chara);
 void Chara_DrawLoop(charap chara);
 
+void Player_MainLoop(charap chara);
+
 void SetCharacterX(charap chara, int x);
 void SetCharacterY(charap chara, int y);
 void SetCharacterCD(charap chara, int cd);
@@ -33,6 +35,7 @@ void SetCharacterSpeed(charap chara, double speed);
 void SetCharacterHP(charap chara, int hp);
 void SetCharacterImg(charap chara, int img);
 
+int GetCharacterType(charap chara);
 int GetCharacterX(charap chara);
 int GetCharacterY(charap chara);
 int GetCharacterCD(charap chara);

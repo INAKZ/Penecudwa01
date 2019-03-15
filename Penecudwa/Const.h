@@ -9,8 +9,8 @@ constexpr int ResolutionX = 1280;
 constexpr int ResolutionY = 720;
 constexpr int PlayareaX = 1280;
 constexpr int PlayareaY = 720;
-extern int WinSize[2];
-extern int PlayArea[4];
+extern int WinSize[2];//解像度
+extern int PlayArea[4];//自機移動範囲
 
 //キャラクタ数上限
 constexpr int CharaMaximum = 1024;
