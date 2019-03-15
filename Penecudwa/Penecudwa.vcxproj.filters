@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Tools">
+      <UniqueIdentifier>{b0a3f928-98e3-457c-a074-f76ab32ce6b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\!Text">
+      <UniqueIdentifier>{5bff3904-57a2-4789-b4b5-485f47554a8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Tools">
+      <UniqueIdentifier>{8226e52d-2ed3-4c34-95f7-2c154ea6db4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Character">
+      <UniqueIdentifier>{fa96f42b-84a3-413e-a7f0-a15cf480e232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Character">
+      <UniqueIdentifier>{da62fb36-e01e-480c-ae5b-3cffdb344764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Stage">
+      <UniqueIdentifier>{73d9e7b3-f154-4af3-b031-88392c381141}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameArea.cpp">
+      <Filter>ソース ファイル\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="readme.cpp">
+      <Filter>ソース ファイル\!Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>ソース ファイル\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>ソース ファイル\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>ソース ファイル\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterMgr.cpp">
+      <Filter>ソース ファイル\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>ソース ファイル\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="TestStage.cpp">
+      <Filter>ソース ファイル\Stage</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Const.h">
+      <Filter>ヘッダー ファイル\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="GameArea.h">
+      <Filter>ヘッダー ファイル\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Startup.h">
+      <Filter>ヘッダー ファイル\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>ヘッダー ファイル\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterMgr.h">
+      <Filter>ヘッダー ファイル\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>ヘッダー ファイル\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>ヘッダー ファイル\Tools</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
